@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuadradoActivity"
+    android:background="#8000FF"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:fontFamily="sans-serif-black"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:text="Quadrado"
+    android:textSize="40sp"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Calcule a Área"
+        android:textSize="20sp"
+        />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="LADO"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/edtLado"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/edt_text"
+                android:gravity="center"
+                android:hint="Digite o valor"
+                android:textSize="20sp"
+
+                />
+
+        </LinearLayout>
+    <Button
+        android:id="@+id/btResultado"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="Calcular"
+        android:textColor="@color/white"
+        android:background="@drawable/btn"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado: "
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/result"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"/>
+</LinearLayout>
